@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:oeh/components/event_item.dart';
+import 'package:oeh/components/event/event_item.dart';
 import 'package:oeh/models/event.dart';
 import 'package:oeh/models/events_list.dart';
 import 'package:provider/provider.dart';
@@ -11,7 +11,7 @@ class EventGrid extends StatelessWidget {
   Widget build(BuildContext context) {
     final provider = Provider.of<EventsList>(context).items;
     final List<Event> loadedEvents = provider;
-    return Container(
+    return SizedBox(
       height: 200,
       child: ListView.builder(
         shrinkWrap: true,

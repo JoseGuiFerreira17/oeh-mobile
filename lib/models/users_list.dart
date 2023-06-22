@@ -37,7 +37,6 @@ class UsersList with ChangeNotifier {
     );
 
     return request.then((value) {
-      print(value.body);
       final id = jsonDecode(value.body)['id'];
       _items.add(
         User(

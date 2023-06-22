@@ -51,22 +51,25 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                   TextFormField(
                     decoration: InputDecoration(
-                        labelText: 'Email',
-                        labelStyle: TextStyle(
+                      labelText: 'Email',
+                      labelStyle: TextStyle(
+                        color: OEHColors.oehPurple,
+                      ),
+                      enabledBorder: OutlineInputBorder(
+                        borderSide: BorderSide(
+                          width: 3,
                           color: OEHColors.oehPurple,
                         ),
-                        enabledBorder: OutlineInputBorder(
-                            borderSide: BorderSide(
-                              width: 3,
-                              color: OEHColors.oehPurple,
-                            ),
-                            borderRadius: BorderRadius.circular(20))),
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                    ),
                     controller: _emailController,
                     keyboardType: TextInputType.emailAddress,
                     validator: (email) {
-                      if (email == null || email.isEmpty) {
+                      if (email!.isEmpty) {
                         return 'Digite seu email';
                       }
+                      return null;
                     },
                   ),
                   const SizedBox(
@@ -107,7 +110,7 @@ class _LoginPageState extends State<LoginPage> {
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(20)),
                       ),
-                      child: Text('Entrar'),
+                      child: const Text('Entrar'),
                     ),
                   ),
                   Row(

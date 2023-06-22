@@ -18,7 +18,7 @@ class CreateEvent extends StatefulWidget {
 }
 
 class _CreateEventState extends State<CreateEvent> {
-  final _formData = Map<String, Object>();
+  final _formData = <String, Object>{};
 
   final createSuccess = const SnackBar(
     content: Text(
@@ -194,7 +194,7 @@ class _CreateEventState extends State<CreateEvent> {
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(20)),
                         ),
-                        child: Text('Salvar'),
+                        child: const Text('Salvar'),
                       ),
                     )
                   ]),

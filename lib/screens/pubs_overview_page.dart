@@ -1,7 +1,7 @@
 // ignore_for_file: prefer_const_constructors, use_build_context_synchronously
 import 'package:flutter/material.dart';
-import 'package:oeh/components/event_grid.dart';
-import 'package:oeh/components/pub_grid.dart';
+import 'package:oeh/components/event/event_grid.dart';
+import 'package:oeh/components/pub/pub_grid.dart';
 import 'package:oeh/utils/app_routes.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 

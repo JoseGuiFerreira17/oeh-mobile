@@ -37,7 +37,7 @@ class PubHome extends StatelessWidget {
               fit: BoxFit.fill,
             ),
           ),
-          SizedBox(width: 10),
+          const SizedBox(width: 10),
           Expanded(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -52,7 +52,7 @@ class PubHome extends StatelessWidget {
                   minFontSize: 12,
                   group: myGroup,
                 ),
-                SizedBox(width: 5),
+                const SizedBox(width: 5),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -60,7 +60,7 @@ class PubHome extends StatelessWidget {
                       Icons.access_time,
                       color: OEHColors.oehPurple,
                     ),
-                    SizedBox(width: 5),
+                    const SizedBox(width: 5),
                     AutoSizeText(
                       '${pub.opennigTime} - ${pub.closingTime}',
                       style: const TextStyle(
@@ -72,7 +72,7 @@ class PubHome extends StatelessWidget {
                     ),
                   ],
                 ),
-                SizedBox(width: 5),
+                const SizedBox(width: 5),
                 AutoSizeText(
                   '${pub.city} - ${pub.state}',
                   style: const TextStyle(
@@ -82,7 +82,7 @@ class PubHome extends StatelessWidget {
                   minFontSize: 12,
                   group: myGroup,
                 ),
-                SizedBox(width: 5),
+                const SizedBox(width: 5),
                 ElevatedButton(
                   onPressed: () {
                     Navigator.pushNamed(

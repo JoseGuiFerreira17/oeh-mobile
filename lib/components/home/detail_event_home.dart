@@ -28,9 +28,9 @@ class DetailEventHome extends StatelessWidget {
               width: double.infinity,
               fit: BoxFit.fill,
             ),
-            SizedBox(height: 15),
+            const SizedBox(height: 15),
             Container(
-              margin: EdgeInsets.symmetric(horizontal: 5),
+              margin: const EdgeInsets.symmetric(horizontal: 5),
               child: Text(
                 event.name.toString(),
                 textAlign: TextAlign.center,
@@ -40,9 +40,9 @@ class DetailEventHome extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 10),
+            const SizedBox(height: 10),
             Container(
-              margin: EdgeInsets.symmetric(horizontal: 5),
+              margin: const EdgeInsets.symmetric(horizontal: 5),
               child: Text(
                 event.description.toString(),
                 style: const TextStyle(
@@ -51,9 +51,9 @@ class DetailEventHome extends StatelessWidget {
                 textAlign: TextAlign.justify,
               ),
             ),
-            SizedBox(height: 10),
+            const SizedBox(height: 10),
             Container(
-              margin: EdgeInsets.symmetric(horizontal: 5),
+              margin: const EdgeInsets.symmetric(horizontal: 5),
               child: Text(
                 '${event.street}, ${event.number}, ${event.district},',
                 style: const TextStyle(
@@ -62,7 +62,7 @@ class DetailEventHome extends StatelessWidget {
               ),
             ),
             Container(
-              margin: EdgeInsets.symmetric(horizontal: 5),
+              margin: const EdgeInsets.symmetric(horizontal: 5),
               child: Text(
                 '${event.city}-${event.state}, ${event.cep}',
                 style: const TextStyle(
@@ -70,9 +70,9 @@ class DetailEventHome extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 10),
+            const SizedBox(height: 10),
             Container(
-              margin: EdgeInsets.symmetric(horizontal: 5),
+              margin: const EdgeInsets.symmetric(horizontal: 5),
               child: Row(
                 children: [
                   Icon(
@@ -82,16 +82,16 @@ class DetailEventHome extends StatelessWidget {
                   Text(
                     DateFormat('EEEE, dd/MM/yyyy', 'pt_BR')
                         .format(DateTime.parse(event.date.toString())),
-                    style: TextStyle(
+                    style: const TextStyle(
                       fontSize: 16,
                     ),
                   )
                 ],
               ),
             ),
-            SizedBox(height: 15),
+            const SizedBox(height: 15),
             Container(
-              margin: EdgeInsets.symmetric(horizontal: 5),
+              margin: const EdgeInsets.symmetric(horizontal: 5),
               width: MediaQuery.of(context).size.width * 0.99,
               child: ElevatedButton(
                 onPressed: () => MapsLauncher.launchCoordinates(
@@ -107,7 +107,7 @@ class DetailEventHome extends StatelessWidget {
           ],
         ),
       ),
-      bottomNavigationBar: BottomBar(),
+      bottomNavigationBar: const BottomBar(),
     );
   }
 }

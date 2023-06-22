@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:oeh/components/pub_item.dart';
+import 'package:oeh/components/pub/pub_item.dart';
 import 'package:oeh/models/pub.dart';
 import 'package:oeh/models/pubs_list.dart';
 import 'package:provider/provider.dart';
@@ -11,14 +11,14 @@ class PubGrid extends StatelessWidget {
   Widget build(BuildContext context) {
     final provider = Provider.of<PubsList>(context).items;
     final List<Pub> loadedPubs = provider;
-    return Container(
+    return SizedBox(
       height: 200,
       child: ListView.builder(
         shrinkWrap: true,
         scrollDirection: Axis.horizontal,
         itemBuilder: (ctx, index) => ChangeNotifierProvider.value(
           value: loadedPubs[index],
-          child: PubItem(),
+          child: const PubItem(),
         ),
         itemCount: loadedPubs.length,
       ),

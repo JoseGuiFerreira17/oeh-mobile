@@ -38,7 +38,7 @@ class EventHome extends StatelessWidget {
               fit: BoxFit.fill,
             ),
           ),
-          SizedBox(height: 10),
+          const SizedBox(height: 10),
           AutoSizeText(
             event.name.toString(),
             style: const TextStyle(
@@ -48,7 +48,7 @@ class EventHome extends StatelessWidget {
             minFontSize: 16,
             group: myGroup,
           ),
-          SizedBox(height: 5),
+          const SizedBox(height: 5),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -56,7 +56,7 @@ class EventHome extends StatelessWidget {
                 Icons.calendar_today,
                 color: OEHColors.oehPurple,
               ),
-              SizedBox(width: 5),
+              const SizedBox(width: 5),
               AutoSizeText(
                 DateFormat('EEEE, dd/MM/yyyy', 'pt_BR')
                     .format(DateTime.parse(event.date.toString())),
@@ -69,7 +69,7 @@ class EventHome extends StatelessWidget {
               ),
             ],
           ),
-          SizedBox(height: 5),
+          const SizedBox(height: 5),
           AutoSizeText(
             '${event.city} - ${event.state}',
             style: const TextStyle(
@@ -79,7 +79,7 @@ class EventHome extends StatelessWidget {
             minFontSize: 16,
             group: myGroup,
           ),
-          SizedBox(height: 5),
+          const SizedBox(height: 5),
           ElevatedButton(
             onPressed: () {
               Navigator.pushNamed(

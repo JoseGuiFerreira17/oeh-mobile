@@ -1,3 +1,5 @@
+// ignore_for_file: constant_identifier_names
+
 class AppRoutes {
   static const PUB_DETAIL = '/pub-detail';
   static const PUB_OVERVIEW = '/pub-overview';

@@ -13,7 +13,7 @@ class CreateUser extends StatefulWidget {
 }
 
 class _CreateUserState extends State<CreateUser> {
-  final _formData = Map<String, Object>();
+  final _formData = <String, Object>{};
 
   final _formKey = GlobalKey<FormState>();
   final _nameController = TextEditingController();
@@ -144,7 +144,7 @@ class _CreateUserState extends State<CreateUser> {
                                 shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(20)),
                               ),
-                              child: Text('Salvar'),
+                              child: const Text('Salvar'),
                             ),
                           )
                         ]),

@@ -26,9 +26,9 @@ class DetailPubHome extends StatelessWidget {
               width: double.infinity,
               fit: BoxFit.fill,
             ),
-            SizedBox(height: 15),
+            const SizedBox(height: 15),
             Container(
-              margin: EdgeInsets.symmetric(horizontal: 5),
+              margin: const EdgeInsets.symmetric(horizontal: 5),
               child: Text(
                 pub.name.toString(),
                 textAlign: TextAlign.center,
@@ -38,9 +38,9 @@ class DetailPubHome extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 10),
+            const SizedBox(height: 10),
             Container(
-              margin: EdgeInsets.symmetric(horizontal: 5),
+              margin: const EdgeInsets.symmetric(horizontal: 5),
               child: Text(
                 pub.description.toString(),
                 style: const TextStyle(
@@ -49,9 +49,9 @@ class DetailPubHome extends StatelessWidget {
                 textAlign: TextAlign.justify,
               ),
             ),
-            SizedBox(height: 10),
+            const SizedBox(height: 10),
             Container(
-              margin: EdgeInsets.symmetric(horizontal: 5),
+              margin: const EdgeInsets.symmetric(horizontal: 5),
               child: Text(
                 '${pub.street}, ${pub.number}, ${pub.district},',
                 style: const TextStyle(
@@ -60,7 +60,7 @@ class DetailPubHome extends StatelessWidget {
               ),
             ),
             Container(
-              margin: EdgeInsets.symmetric(horizontal: 5),
+              margin: const EdgeInsets.symmetric(horizontal: 5),
               child: Text(
                 '${pub.city}-${pub.state}, ${pub.cep}',
                 style: const TextStyle(
@@ -68,9 +68,9 @@ class DetailPubHome extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 10),
+            const SizedBox(height: 10),
             Container(
-              margin: EdgeInsets.symmetric(horizontal: 5),
+              margin: const EdgeInsets.symmetric(horizontal: 5),
               child: Row(
                 children: [
                   Icon(
@@ -79,16 +79,16 @@ class DetailPubHome extends StatelessWidget {
                   ),
                   Text(
                     '${pub.opennigTime} - ${pub.closingTime}',
-                    style: TextStyle(
+                    style: const TextStyle(
                       fontSize: 16,
                     ),
                   )
                 ],
               ),
             ),
-            SizedBox(height: 15),
+            const SizedBox(height: 15),
             Container(
-              margin: EdgeInsets.symmetric(horizontal: 5),
+              margin: const EdgeInsets.symmetric(horizontal: 5),
               width: MediaQuery.of(context).size.width * 0.99,
               child: ElevatedButton(
                 onPressed: () => MapsLauncher.launchCoordinates(
@@ -104,7 +104,7 @@ class DetailPubHome extends StatelessWidget {
           ],
         ),
       ),
-      bottomNavigationBar: BottomAppBar(),
+      bottomNavigationBar: const BottomAppBar(),
     );
   }
 }

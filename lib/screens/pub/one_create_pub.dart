@@ -13,7 +13,7 @@ class OneCreatePub extends StatefulWidget {
 }
 
 class _OneCreatePubState extends State<OneCreatePub> {
-  final _formData = Map<String, Object>();
+  final _formData = <String, Object>{};
 
   final _formKey = GlobalKey<FormState>();
   final _nameController = TextEditingController();
@@ -71,7 +71,7 @@ class _OneCreatePubState extends State<OneCreatePub> {
                       height: 55,
                       child: ElevatedButton(
                         onPressed: () {
-                          final model = Map<String, Object>();
+                          final model = <String, Object>{};
                           model['name'] = _nameController.text;
                           model['phone'] = _phoneController.text;
                           model['description'] = _descriptionController.text;
@@ -89,7 +89,7 @@ class _OneCreatePubState extends State<OneCreatePub> {
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(20)),
                         ),
-                        child: Text('Continuar'),
+                        child: const Text('Continuar'),
                       ),
                     )
                   ]),

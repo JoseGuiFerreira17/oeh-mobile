@@ -27,7 +27,7 @@ class _TwoCreatePubState extends State<TwoCreatePub> {
     });
   }
 
-  final _formData = Map<String, Object>();
+  final _formData = <String, Object>{};
 
   final _formKey = GlobalKey<FormState>();
   final _stateController = TextEditingController();
@@ -103,7 +103,7 @@ class _TwoCreatePubState extends State<TwoCreatePub> {
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(20)),
                         ),
-                        child: Text('Salvar'),
+                        child: const Text('Salvar'),
                       ),
                     )
                   ]),

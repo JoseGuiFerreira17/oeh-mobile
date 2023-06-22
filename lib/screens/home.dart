@@ -37,7 +37,7 @@ class _HomeState extends State<Home> {
                 ),
               ),
             ),
-            ListEventsItem(),
+            const ListEventsItem(),
             Container(
               margin: const EdgeInsets.symmetric(horizontal: 15),
               child: const Text(
@@ -48,11 +48,11 @@ class _HomeState extends State<Home> {
                 ),
               ),
             ),
-            ListPubsHome(),
+            const ListPubsHome(),
           ],
         ),
       ),
-      bottomNavigationBar: BottomBar(),
+      bottomNavigationBar: const BottomBar(),
     );
   }
 }
