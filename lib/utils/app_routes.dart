@@ -8,4 +8,5 @@ class AppRoutes {
   static const HOME = '/home';
   static const DETAIL_EVENT_HOME = '/detail-event-home';
   static const DETAIL_PUB_HOME = '/detail-pub-home';
+  static const SPLASH_SCREEN_LOGIN = '/splash-screen-login';
 }

@@ -1,8 +1,9 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, use_build_context_synchronously
 import 'package:flutter/material.dart';
 import 'package:oeh/components/event_grid.dart';
 import 'package:oeh/components/pub_grid.dart';
 import 'package:oeh/utils/app_routes.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 import '../core/assets.dart';
 
@@ -18,8 +19,16 @@ class PubsOverviewPage extends StatelessWidget {
         backgroundColor: OEHColors.oehWhite,
         actions: [
           IconButton(
-            onPressed: () {},
-            icon: OEHIcons.getSettings(OEHColors.oehPurple),
+            onPressed: () async {
+              SharedPreferences prefs = await SharedPreferences.getInstance();
+              prefs.remove("access");
+              Navigator.of(context).pushReplacementNamed(AppRoutes.HOME);
+            },
+            icon: Icon(
+              Icons.logout,
+              color: OEHColors.oehPurple,
+              size: 35,
+            ),
           )
         ],
       ),

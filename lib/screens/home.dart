@@ -3,7 +3,6 @@ import 'package:oeh/components/botton_bar.dart';
 import 'package:oeh/components/home/list_events_item.dart';
 import 'package:oeh/components/home/list_pubs_home.dart';
 import 'package:oeh/core/assets.dart';
-import 'package:oeh/utils/app_routes.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});

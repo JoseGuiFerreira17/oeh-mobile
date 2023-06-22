@@ -34,7 +34,7 @@ class BottomBar extends StatelessWidget {
           ),
           IconButton(
             onPressed: () {
-              Navigator.pushNamed(context, AppRoutes.LOGIN);
+              Navigator.pushNamed(context, AppRoutes.SPLASH_SCREEN_LOGIN);
             },
             icon: const Icon(
               Icons.manage_accounts_rounded,
